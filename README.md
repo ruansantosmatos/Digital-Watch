@@ -1,2 +1,3 @@
 # RelogioJs
- relogio feito em JS
+ relogio feito em Javascript.
+
