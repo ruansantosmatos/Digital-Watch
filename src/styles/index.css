@@ -1,0 +1,108 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+}
+
+.painel {
+    width: 50vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #121212;
+    border-radius: 10px;
+    background-color: #282828;
+    box-shadow: 15px 15px 8px rgba(0, 0, 0, 0.3);
+}
+
+.painel>div {
+    width: 23%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 1px #121212;
+    border-radius: 10px;
+    background-color: #24252a;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.painel>div>p:nth-child(1) {
+    color: #ffffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+}
+
+.painel>div>p:nth-child(2) {
+    color: #ffffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.painel>div:first-child {
+    margin-right: 5%;
+}
+
+.painel>div:last-child {
+    margin-left: 5%;
+}
+
+
+@media screen and (max-width: 950px) and (max-width: 1024px) {
+    .painel {
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .painel>div {
+        width: 90%;
+        height: 25%;
+        border-radius: 0px;
+    }
+
+    .painel>div:first-child {
+        margin: 0px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .painel>div:last-child {
+        margin: 0px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .painel>div>p:nth-child(1) {
+        color: #ffffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 4em;
+    }
+
+    .painel>div>p:nth-child(2) {
+        color: #ffffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+}
