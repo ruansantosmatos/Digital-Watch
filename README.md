@@ -48,7 +48,7 @@ Para visualizar e modificar o projeto, você precisará de:
         └── index.css        # Arquivo de estilos CSS
     ├──scripts
         └── script.js        # Arquivo JavaScript que faz o relógio funcionar
-
+```
 
 ## Contribuições
 
